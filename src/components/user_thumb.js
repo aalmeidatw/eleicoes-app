@@ -1,12 +1,12 @@
 import React from 'react'
 
-import './man_icon.png'
+import icon from  './man_icon.png'
 
 class ThumbUser extends React.Component {
   render() {
     return (
       <div>
-        <img src="man_icon.png" alt="icon" />
+        <img src={icon} alt="icon" />
       </div>
     )
   }
