@@ -18,13 +18,17 @@ const icons = {
   woman: womanIcon
 }
 
+const buttonOptions = {
+  buttonText: "Click Here"
+}
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <ThumbUser icon={icons.woman} />
         <TextArea {...textAreaOptions} />
-        <Button />
+        <Button {...buttonOptions} />
       </div>
     );
   }
