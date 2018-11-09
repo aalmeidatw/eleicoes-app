@@ -4,8 +4,8 @@ class TextArea extends React.Component {
   render() {
     return (
       <div>
-        <label> Total: </label>
-        <input type="text" placeholder="Votos aqui" ></input>
+        <label> {this.props.label} </label>
+        <input type="text" placeholder={this.props.placeHolder} ></input>
       </div>
     )
   }
