@@ -24,13 +24,35 @@ const buttonOptions = {
 }
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      votes: 100,
+      totalVotes: 0,
+    }
+  }
+
+
+  setNewVoteState = (n) => {
+    this.setState({
+      votes: n
+    })
+  }
+  
+  onClickGetVotes = () => {
+    this.setState({
+      totalVotes: this.state.votes
+    })
+  }
+
+
   render() {
     return (
       <div className="App">
         <ThumbUser icon={icons.woman} />
-        <TextArea {...textAreaOptions} />
-        <Button {...buttonOptions} />
-        <Votes votes={10} />
+        <TextArea {...textAreaOptions} onChange={this.setNewVoteState} />
+        <Button {...buttonOptions} onClick={this.onClickGetVotes} />
+        <Votes votes={this.state.totalVotes}  />
       </div>
     );
   }
