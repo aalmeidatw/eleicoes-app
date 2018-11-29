@@ -3,7 +3,8 @@ import React from 'react'
 class TextArea extends React.Component {
 
   onChange = (event) => {
-    this.props.onChange(event.target.value)
+    const value = Number(event.target.value)
+    this.props.onChange(value)
   }
 
   render() {

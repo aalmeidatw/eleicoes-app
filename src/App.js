@@ -27,7 +27,7 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      votes: 100,
+      votes: 0,
       totalVotes: 0,
     }
   }
@@ -37,13 +37,16 @@ class App extends Component {
     this.setState({
       votes: n
     })
+    setTimeout(() => console.log(this.state.votes))
   }
   
   onClickGetVotes = () => {
+    let total = this.state.votes + this.state.totalVotes
     this.setState({
-      totalVotes: this.state.votes
+      totalVotes: total
     })
   }
+
 
 
   render() {
