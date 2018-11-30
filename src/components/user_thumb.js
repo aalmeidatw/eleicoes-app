@@ -7,6 +7,7 @@ class ThumbUser extends React.Component {
     return (
       <div>
         <img src={this.props.icon} alt="avatar icon"  />
+        <label>{this.props.name}</label>
       </div>
    )
   }

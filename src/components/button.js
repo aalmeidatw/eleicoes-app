@@ -4,7 +4,6 @@ import './button.css'
 class Button extends React.Component {
   onClick = () => {
     this.props.onClick()
-   //this.props.onClick(Math.random() * 100)
   }
 
   render() {
@@ -15,7 +14,7 @@ class Button extends React.Component {
           type="button"
           onClick={this.onClick}
         >
-          {this.props.buttonText}
+          Clique Aqui!
         </button>
       </div>
     )
