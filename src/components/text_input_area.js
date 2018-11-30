@@ -10,11 +10,11 @@ class TextArea extends React.Component {
   render() {
     return (
       <div>
-        <label> {this.props.label} </label>
+        <label> Insira a quatidade de votos:  </label>
         <input 
           type="text" 
           onChange={this.onChange} 
-          placeholder={this.props.placeHolder} 
+          placeholder='votos aqui' 
          >
       </input>
       </div>
