@@ -36,8 +36,19 @@ class App extends Component {
           icon={manIcon}
           OnChange={this.setNewVoteState}
           onClick={this.onClickGetVotes}
-          
-      />
+        />
+
+      <br />
+
+        <Candidate 
+          name={'Osvaldo da Silva'}
+          icon={manIcon}
+          OnChange={this.setNewVoteState}
+          onClick={this.onClickGetVotes}
+        />
+
+      <br />
+
         <Votes votes={this.state.totalVotes}  />
       </div>
     );
