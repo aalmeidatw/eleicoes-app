@@ -5,7 +5,7 @@ import Votes from './components/votes'
 import Candidate from './components/candidate'
 
 import manIcon from './man_icon.png'
-import womanIcon from './woman_icon.png'
+//import womanIcon from './woman_icon.png'
 
 class App extends Component {
   constructor(props) {
