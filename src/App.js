@@ -5,6 +5,9 @@ import Votes from './components/votes'
 import Candidate from './components/candidate'
 
 import manIcon from './man_icon.png'
+import TestComponent from './components/test_component'
+
+
 //import womanIcon from './woman_icon.png'
 
 class App extends Component {
@@ -31,25 +34,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Candidate 
-          name={'Osvaldo da Silva'}
-          icon={manIcon}
-          OnChange={this.setNewVoteState}
-          onClick={this.onClickGetVotes}
+
+        <TestComponent
         />
 
-      <br />
-
-        <Candidate 
-          name={'Osvaldo da Silva'}
-          icon={manIcon}
-          OnChange={this.setNewVoteState}
-          onClick={this.onClickGetVotes}
-        />
-
-      <br />
-
-        <Votes votes={this.state.totalVotes}  />
       </div>
     );
   }
