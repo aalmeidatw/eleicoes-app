@@ -1,0 +1,14 @@
+.center_line {
+  border: none;
+  color: white;
+  padding: 15px 23px;
+  text-align: center;
+}
+
+.another_class {
+  background-color: #fff;
+  background-color: #4CAF50;
+  color: yellow;;
+  text-align: left;
+}
+
